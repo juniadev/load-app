@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    tools:showIn="@layout/activity_detail"
+    android:padding="@dimen/fab_margin"
+    app:layoutDescription="@xml/content_detail_scene">
+
+    <TextView
+        android:id="@+id/filename_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/detail_filename"
+        android:layout_marginTop="@dimen/margin_detail_fields"
+        style="@style/DetailTitleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/DetailTitleText"
+        android:id="@+id/status_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/detail_status"
+        android:layout_marginTop="@dimen/fab_margin"
+        app:layout_constraintStart_toStartOf="@id/filename_tv"
+        app:layout_constraintTop_toBottomOf="@+id/filename_value_tv" />
+
+    <TextView
+        style="@style/DetailValueText"
+        android:id="@+id/filename_value_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/filename_tv"
+        app:layout_constraintTop_toTopOf="@+id/filename_tv"
+        tools:text="@string/download_option_retrofit" />
+
+    <TextView
+        style="@style/DetailValueText"
+        android:id="@+id/status_value_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/filename_value_tv"
+        app:layout_constraintTop_toTopOf="@+id/status_tv"
+        tools:text="@string/download_success" />
+
+    <Button
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/ok_button"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:layout_width="0dp"
+        android:text="@string/button_completed"
+        android:textColor="@color/white"
+        app:buttonTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

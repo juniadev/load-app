@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingButton">
+        <attr name="buttonTextColor" format="color" />
+        <attr name="buttonBackgroundColor" format="color" />
+        <attr name="buttonLoadingColor" format="color" />
+        <attr name="buttonCircleColor" format="color" />
+    </declare-styleable>
+</resources>
