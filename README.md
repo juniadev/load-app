@@ -1,5 +1,5 @@
-# load-app
-Load App, an Android app made for the Udacity nanodegree - Android Kotlin Developer.
+# Load App
+Android app made for the Udacity nanodegree - Android Kotlin Developer.
 
 Starter code: https://github.com/udacity/nd940-c3-advanced-android-programming-project-starter
 
